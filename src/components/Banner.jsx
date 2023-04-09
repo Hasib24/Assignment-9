@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div>
+        <div className='container mx-auto'>
             the banner page!
         </div>
     );
