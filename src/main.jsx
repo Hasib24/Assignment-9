@@ -21,7 +21,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <HomePage></HomePage>
+        element: <HomePage></HomePage>,
+        loader: ()=>fetch('featuredjobs.json')
       },
       {
         path: "statistics",
