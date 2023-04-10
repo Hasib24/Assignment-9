@@ -2,8 +2,15 @@ import React from 'react';
 import { IoLocationOutline } from "react-icons/io5"
 import { HiOutlineCurrencyDollar } from "react-icons/hi"
 import BtnNormal from '../buttons/BtnNormal';
+import { Link } from 'react-router-dom';
+
+
 
 const JobCard = ({job}) => {
+    const viewDetailsbtnHandler = () =>{
+        console.log(`btn clicked`);
+    }
+
     let {job_title, company_name, company_logo, location, location_type, employment_type, salary} = job;
     return (
         <div className='border my-3 mx-2 p-3'>
@@ -23,7 +30,14 @@ const JobCard = ({job}) => {
                 <span  className='mr-5'><IoLocationOutline className='inline-block text-xl'></IoLocationOutline>{location}</span>
                 <span > <HiOutlineCurrencyDollar className='inline-block text-xl'></HiOutlineCurrencyDollar>{salary}</span>
             </div>
-            <BtnNormal btnText={'View Details'} ></BtnNormal>
+            
+
+                <Link to='jobdetaiis'>
+                    <BtnNormal btnText={'View Details'} ></BtnNormal>
+                
+                </Link>
+
+            
         </div>
     );
 };
