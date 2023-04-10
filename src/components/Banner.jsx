@@ -24,7 +24,7 @@ const Banner = () => {
                 </p>
                 <p className='w-36 border'>
 
-                    <BtnBig btnText={'From banner'}></BtnBig>
+                    <BtnBig btnText={'Get Started'}></BtnBig>
                 </p>
             </div>
         </div>

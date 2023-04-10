@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import BtnBig from './buttons/BtnBig';
 
 
 
@@ -34,8 +35,7 @@ const Header = () => {
                 <NavLink style={navLinkStyle} className='m-2 font-bold tracking-wider ' to='/appliedjobs'>Applied Jobs</NavLink>
                 <NavLink style={navLinkStyle} className='m-2 font-bold tracking-wider ' to='/blog'>Blog</NavLink>
             </nav>
-            <button className='bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-white p-3 rounded-md font-bold tracking-wider'>Start Appling</button>
-
+            <BtnBig btnText={'Start Appling'}></BtnBig>
         </div>
     );
 };
