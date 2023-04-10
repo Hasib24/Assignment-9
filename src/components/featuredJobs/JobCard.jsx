@@ -1,11 +1,13 @@
 import React from 'react';
 import { IoLocationOutline } from "react-icons/io5"
 import { HiOutlineCurrencyDollar } from "react-icons/hi"
+import BtnNormal from '../buttons/BtnNormal';
 
 const JobCard = ({job}) => {
-    let {job_title, company_name, location, location_type, employment_type, salary} = job;
+    let {job_title, company_name, company_logo, location, location_type, employment_type, salary} = job;
     return (
         <div className='border my-3 mx-2 p-3'>
+            <img className='w-32' src={company_logo} alt="company logo" />
             <div>
                 <h1 className='text-2xl font-bold text-slate-700'>{job_title}</h1>
                 <h1 className='text-xl font-semibold text-slate-500'>{company_name}</h1>
@@ -18,9 +20,10 @@ const JobCard = ({job}) => {
             </div>
             
             <div className='my-3'>
-                <span  ><IoLocationOutline className='inline-block text-xl'></IoLocationOutline>{location}</span>
+                <span  className='mr-5'><IoLocationOutline className='inline-block text-xl'></IoLocationOutline>{location}</span>
                 <span > <HiOutlineCurrencyDollar className='inline-block text-xl'></HiOutlineCurrencyDollar>{salary}</span>
             </div>
+            <BtnNormal btnText={'View Details'} ></BtnNormal>
         </div>
     );
 };
