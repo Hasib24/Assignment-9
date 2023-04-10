@@ -1,5 +1,6 @@
 import React from 'react';
 import BannerPic from '../assets/img/bannerPic.png'
+import BtnBig from './buttons/BtnBig';
 
 const Banner = () => {
 
@@ -20,6 +21,10 @@ const Banner = () => {
                 <h1 className='text-5xl font-bold tracking-wider'>Every small step <br /> count toward your <br /> <span style={siteLogoStyle}>Deram Job!</span></h1>
                 <p className='text-slate-600 my-5'>
                     Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.
+                </p>
+                <p className='w-36 border'>
+
+                    <BtnBig btnText={'From banner'}></BtnBig>
                 </p>
             </div>
         </div>
