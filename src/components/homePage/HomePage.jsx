@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../Banner';
 import JobCategory from '../jobCategory/JobCategory';
-import FeaturedJobs from '../FeaturedJobs';
+import FeaturedJobs from '../featuredJobs/FeaturedJobs';
 
 const HomePage = () => {
     return (

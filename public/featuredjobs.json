@@ -1,0 +1,119 @@
+[
+    {
+      "id": 1,
+      "job_title": "Software Engineer",
+      "company_name": "Acme Corporation",
+      "location": "San Francisco, CA",
+      "location_type": "local",
+      "employment_type": "full-time",
+      "salary": "$120,000 - $150,000",
+      "job_description": "We are seeking a skilled software engineer to join our team and help develop our next generation software platform. The ideal candidate will have experience with Python, Java, and cloud technologies.",
+      "requirements": [
+        "Bachelor's degree in Computer Science or a related field",
+        "3+ years of experience in software engineering",
+        "Experience with Python, Java, and cloud technologies",
+        "Excellent problem solving and communication skills"
+      ],
+      "phone": "555-555-5555",
+      "email": "jobs@acme.com",
+      "experience": "3+ years of experience in software engineering"
+    },
+    {
+      "id": 2,
+      "job_title": "Marketing Manager",
+      "company_name": "Globex Corporation",
+      "location": "New York, NY",
+      "location_type": "local",
+      "employment_type": "part-time",
+      "salary": "$80,000 - $100,000",
+      "job_description": "We are seeking a highly motivated marketing manager to join our team and help drive our marketing efforts. The ideal candidate will have experience with social media marketing, content creation, and data analysis.",
+      "requirements": [
+        "Bachelor's degree in Marketing or a related field",
+        "5+ years of experience in marketing",
+        "Experience with social media marketing, content creation, and data analysis",
+        "Strong communication and project management skills"
+      ],
+      "phone": "555-555-5555",
+      "email": "jobs@globex.com",
+      "experience": "5+ years of experience in marketing"
+    },
+    {
+      "id": 3,
+      "job_title": "Customer Support Specialist",
+      "company_name": "Innovate Co.",
+      "location": "Remote",
+      "location_type": "remote",
+      "employment_type": "full-time",
+      "salary": "$50,000 - $60,000",
+      "job_description": "We are seeking a customer support specialist to join our team and provide exceptional service to our customers. The ideal candidate will have experience with customer service, problem-solving, and communication.",
+      "requirements": [
+        "High school diploma or equivalent",
+        "1+ years of experience in customer service",
+        "Excellent communication and problem-solving skills",
+        "Experience with CRM software a plus"
+      ],
+      "phone": "555-555-5555",
+      "email": "jobs@innovateco.com",
+      "experience": "1+ years of experience in customer service"
+    },
+    {
+      "id": 4,
+      "job_title": "Data Analyst",
+      "company_name": "Analytics Co.",
+      "location": "Chicago, IL",
+      "location_type": "local",
+      "employment_type": "full-time",
+      "salary": "$70,000 - $90,000",
+      "job_description": "We are seeking a data analyst to join our team and help analyze and interpret data for our clients. The ideal candidate will have experience with data analysis, SQL, and visualization tools.",
+      "requirements": [
+          "High school diploma or equivalent",
+          "1+ years of experience in customer service",
+          "Excellent communication and problem-solving skills",
+          "Experience with CRM software a plus"
+        ],
+        "phone": "555-555-5555",
+        "email": "jobs@innovateco.com",
+        "experience": "1+ years of experience in customer service"
+    },
+    {
+        "id": 5,
+        "job_title": "Software Engineer",
+        "company_name": "Acme Corporation",
+        "location": "San Francisco, CA",
+        "location_type": "local",
+        "employment_type": "full-time",
+        "salary": "$120,000 - $150,000",
+        "job_description": "We are seeking a skilled software engineer to join our team and help develop our next generation software platform. The ideal candidate will have experience with Python, Java, and cloud technologies.",
+        "requirements": [
+          "Bachelor's degree in Computer Science or a related field",
+          "3+ years of experience in software engineering",
+          "Experience with Python, Java, and cloud technologies",
+          "Excellent problem solving and communication skills"
+        ],
+        "phone": "555-555-5555",
+        "email": "jobs@acme.com",
+        "experience": "3+ years of experience in software engineering"
+      },
+      {
+        "id": 6,
+        "job_title": "Marketing Manager",
+        "company_name": "Globex Corporation",
+        "location": "New York, NY",
+        "location_type": "local",
+        "employment_type": "part-time",
+        "salary": "$80,000 - $100,000",
+        "job_description": "We are seeking a highly motivated marketing manager to join our team and help drive our marketing efforts. The ideal candidate will have experience with social media marketing, content creation, and data analysis.",
+        "requirements": [
+          "Bachelor's degree in Marketing or a related field",
+          "5+ years of experience in marketing",
+          "Experience with social media marketing, content creation, and data analysis",
+          "Strong communication and project management skills"
+        ],
+        "phone": "555-555-5555",
+        "email": "jobs@globex.com",
+        "experience": "5+ years of experience in marketing"
+      }
+]
+
+         
+  
