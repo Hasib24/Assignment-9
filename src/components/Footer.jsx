@@ -16,11 +16,11 @@ const Footer = () => {
             <div className='container mx-auto md:grid grid-cols-6  text-white py-10 px-2'>  
             <div className='m-2 text-center md:text-left col-span-2'>
                 <h1 style={siteLogoStyle} className='text-4xl font-bold'>DreamJobs</h1>
-                <p>There are many variations of passages of Lorem Ipsum , but the majority have suffered alteration in some form.</p>
+                <p className='my-3'>There are many variations of passages of Lorem Ipsum , but the majority have suffered alteration in some form.</p>
                 <div className='flex sm:justify-center md:justify-start'>
-                    <FaFacebookF></FaFacebookF>
-                    <TiSocialTwitter></TiSocialTwitter>
-                    <FaInstagram></FaInstagram>
+                    <FaFacebookF className='inline-block text-4xl border p-1 m-1 rounded-full cursor-pointer '></FaFacebookF>
+                    <TiSocialTwitter className='inline-block text-4xl border p-1 m-1 rounded-full cursor-pointer '></TiSocialTwitter>
+                    <FaInstagram className='inline-block text-4xl border p-1 m-1 rounded-full cursor-pointer '></FaInstagram>
                 </div>
             </div>
             <div className='m-2 text-center md:text-left'>
@@ -53,12 +53,16 @@ const Footer = () => {
             <div className='m-2 text-center md:text-left'>
                 <h1 className='text-xl font-semibold'>Contact</h1>
                 
-                <address>
+                <address className='not-italic'>
                     <h1 className='font-extralight' >524 Broadway , NYC</h1>
                     <h1 className='font-extralight' >+1 777 - 978 - 5570</h1>
                 </address>
 
             </div>
+        </div>
+        <div className='text-white text-center md:flex md:justify-between container mx-auto py-6 border-t border-slate-700'>
+            <div> &copy; 2023 <span className='cursor-pointer font-semibold'>DreamJobs</span> || All Right Researved </div>
+            <div>Powered by <span className='font-bold cursor-pointer'>Programming Hero</span></div>
         </div>
         </div>
         
