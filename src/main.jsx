@@ -7,7 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './components/Home';
 import Banner from './components/Banner';
 import Statistics from './components/Statistics';
-import AppliedJobs from './components/AppliedJobs';
+import AppliedJobs from './components/appliedJobs/AppliedJobs';
 import Blog from './components/Blog';
 import Error from './components/Error';
 import HomePage from './components/homePage/HomePage';
@@ -30,7 +30,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'appliedjobs',
-        element: <AppliedJobs></AppliedJobs>
+        element: <AppliedJobs></AppliedJobs>,
+        loader: ()=>fetch('featuredjobs.json')
       },
       {
         path: "blog",
