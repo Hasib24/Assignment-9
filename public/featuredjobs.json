@@ -9,14 +9,10 @@
       "employment_type": "full-time",
       "salary": "$120,000 - $150,000",
       "job_description": "We are seeking a skilled software engineer to join our team and help develop our next generation software platform. The ideal candidate will have experience with Python, Java, and cloud technologies.",
-      "requirements": [
-        "Bachelor's degree in Computer Science or a related field",
-        "3+ years of experience in software engineering",
-        "Experience with Python, Java, and cloud technologies",
-        "Excellent problem solving and communication skills"
-      ],
+      "job_responsibilities": "As a Software Engineer, you will be responsible for designing and developing high-quality software solutions. You will collaborate with cross-functional teams to identify and solve complex problems, write clean, maintainable, and efficient code, and participate in code and design reviews. Your responsibilities will include:\n\n- Designing and developing high-quality software solutions\n- Collaborating with cross-functional teams to identify and solve complex problems\n- Writing clean, maintainable, and efficient code\n- Participating in code and design reviews",
       "phone": "555-555-5555",
       "email": "jobs@acme.com",
+      "education": "Bachelor degree to complete any reputational university.",
       "experience": "3+ years of experience in software engineering"
     },
     {
@@ -29,14 +25,10 @@
       "employment_type": "part-time",
       "salary": "$80,000 - $100,000",
       "job_description": "We are seeking a highly motivated marketing manager to join our team and help drive our marketing efforts. The ideal candidate will have experience with social media marketing, content creation, and data analysis.",
-      "requirements": [
-        "Bachelor's degree in Marketing or a related field",
-        "5+ years of experience in marketing",
-        "Experience with social media marketing, content creation, and data analysis",
-        "Strong communication and project management skills"
-      ],
+      "job_responsibilities": "As a Marketing Manager, you will be responsible for developing and implementing marketing strategies that drive brand awareness, lead generation, and customer acquisition. Your responsibilities will include:\n\n- Developing and implementing marketing strategies\n- Managing social media accounts and creating content\n- Conducting market research and analyzing data to inform marketing decisions\n- Collaborating with cross-functional teams to create marketing campaigns\n- Measuring and analyzing the effectiveness of marketing campaigns",
       "phone": "555-555-5555",
       "email": "jobs@globex.com",
+      "education": "Bachelor degree to complete any reputational university.",
       "experience": "5+ years of experience in marketing"
     },
     {
@@ -49,14 +41,10 @@
       "employment_type": "full-time",
       "salary": "$50,000 - $60,000",
       "job_description": "We are seeking a customer support specialist to join our team and provide exceptional service to our customers. The ideal candidate will have experience with customer service, problem-solving, and communication.",
-      "requirements": [
-        "High school diploma or equivalent",
-        "1+ years of experience in customer service",
-        "Excellent communication and problem-solving skills",
-        "Experience with CRM software a plus"
-      ],
+      "job_responsibilities": "As a Graphic Designer, you will be responsible for creating visual concepts, using computer software or by hand, to communicate ideas that inspire, inform, and captivate our clients' target audiences. Your responsibilities will include:\n\n- Developing and designing graphics and layouts for print and digital media\n- Collaborating with cross-functional teams to identify creative solutions to communication challenges\n- Presenting design concepts to clients or art directors\n- Making revisions to designs based on client feedback",
       "phone": "555-555-5555",
       "email": "jobs@innovateco.com",
+      "education": "Bachelor degree to complete any reputational university.",
       "experience": "1+ years of experience in customer service"
     },
     {
@@ -69,15 +57,11 @@
       "employment_type": "full-time",
       "salary": "$70,000 - $90,000",
       "job_description": "We are seeking a data analyst to join our team and help analyze and interpret data for our clients. The ideal candidate will have experience with data analysis, SQL, and visualization tools.",
-      "requirements": [
-          "High school diploma or equivalent",
-          "1+ years of experience in customer service",
-          "Excellent communication and problem-solving skills",
-          "Experience with CRM software a plus"
-        ],
-        "phone": "555-555-5555",
-        "email": "jobs@innovateco.com",
-        "experience": "1+ years of experience in customer service"
+      "job_responsibilities": "As a Product Manager, you will be responsible for managing the entire product lifecycle, from ideation to launch. You will collaborate with cross-functional teams to define product requirements, create product roadmaps, and prioritize features. Your responsibilities will include:\n\n- Defining product requirements and creating product roadmaps",
+      "phone": "555-555-5555",
+      "email": "jobs@innovateco.com",
+      "education": "Bachelor degree to complete any reputational university.",
+      "experience": "1+ years of experience in customer service"
     },
     {
         "id": 5,
@@ -89,14 +73,10 @@
         "employment_type": "full-time",
         "salary": "$120,000 - $150,000",
         "job_description": "We are seeking a skilled software engineer to join our team and help develop our next generation software platform. The ideal candidate will have experience with Python, Java, and cloud technologies.",
-        "requirements": [
-          "Bachelor's degree in Computer Science or a related field",
-          "3+ years of experience in software engineering",
-          "Experience with Python, Java, and cloud technologies",
-          "Excellent problem solving and communication skills"
-        ],
+        "job_responsibilities": "As a Software Engineer, you will be responsible for designing and developing high-quality software solutions. You will collaborate with cross-functional teams to identify and solve complex problems, write clean, maintainable, and efficient code, and participate in code and design reviews. Your responsibilities will include:\n\n- Designing and developing high-quality software solutions\n- Collaborating with cross-functional teams to identify and solve complex problems\n- Writing clean, maintainable, and efficient code\n- Participating in code and design reviews",
         "phone": "555-555-5555",
         "email": "jobs@acme.com",
+        "education": "Bachelor degree to complete any reputational university.",
         "experience": "3+ years of experience in software engineering"
       },
       {
@@ -109,14 +89,10 @@
         "employment_type": "part-time",
         "salary": "$80,000 - $100,000",
         "job_description": "We are seeking a highly motivated marketing manager to join our team and help drive our marketing efforts. The ideal candidate will have experience with social media marketing, content creation, and data analysis.",
-        "requirements": [
-          "Bachelor's degree in Marketing or a related field",
-          "5+ years of experience in marketing",
-          "Experience with social media marketing, content creation, and data analysis",
-          "Strong communication and project management skills"
-        ],
+        "job_responsibilities": "As a Marketing Manager, you will be responsible for designing and developing high-quality software solutions. You will collaborate with cross-functional teams to identify and solve complex problems, write clean, maintainable, and efficient code, and participate in code and design reviews. Your responsibilities will include:\n\n- Designing and developing high-quality software solutions\n- Collaborating with cross-functional teams to identify and solve complex problems\n- Writing clean, maintainable, and efficient code\n- Participating in code and design reviews",
         "phone": "555-555-5555",
         "email": "jobs@globex.com",
+        "education": "Bachelor degree to complete any reputational university.",
         "experience": "5+ years of experience in marketing"
       }
 ]

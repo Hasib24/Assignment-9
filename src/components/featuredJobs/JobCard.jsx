@@ -7,11 +7,11 @@ import { Link } from 'react-router-dom';
 
 
 const JobCard = ({job}) => {
-    const viewDetailsbtnHandler = () =>{
-        console.log(`btn clicked`);
+    const viewDetailsbtnHandler = (id) =>{
+        localStorage.setItem('jobId', id)
     }
 
-    let {job_title, company_name, company_logo, location, location_type, employment_type, salary} = job;
+    let {id, job_title, company_name, company_logo, location, location_type, employment_type, salary} = job;
     return (
         <div className='border my-3 mx-2 p-3'>
             <img className='w-32' src={company_logo} alt="company logo" />
@@ -32,7 +32,7 @@ const JobCard = ({job}) => {
             </div>
             
 
-                <Link to='jobdetaiis'>
+                <Link to='jobdetaiis' onClick={()=>viewDetailsbtnHandler(id)}>
                     <BtnNormal btnText={'View Details'} ></BtnNormal>
                 
                 </Link>
