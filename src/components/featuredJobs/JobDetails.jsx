@@ -6,6 +6,10 @@ import { BsTelephone } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { IoLocationOutline } from "react-icons/io5"
 
+// for tost msg 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const JobDetails = () => {
     let allJobsArray = useLoaderData();
@@ -41,19 +45,26 @@ const JobDetails = () => {
             appliedJobsIds = JSON.parse(localStorage.getItem('appliedJobsIds'))
             let isExist = appliedJobsIds.find(jobId => jobId === id)
             console.log(isExist);
-            isExist ? console.log(`allready added`) : appliedJobsIds = [...appliedJobsIds, id];
-            localStorage.setItem('appliedJobsIds', JSON.stringify(appliedJobsIds))
+            isExist ? warnify() : appliedJobsIds = [...appliedJobsIds, id];
+            localStorage.setItem('appliedJobsIds', JSON.stringify(appliedJobsIds));
+            if(!isExist){
+                notify()
+            }
             return
 
          }
+         notify()
          appliedJobsIds = [...appliedJobsIds, id]
          localStorage.setItem('appliedJobsIds', JSON.stringify(appliedJobsIds))
 
 
     }
 
-    return (
+    const notify = () => toast("Wow! Application done");
+    const warnify = () => toast("Stop! Already applied");
 
+    return (
+        <>
         <div className='container mx-auto my-10 px-3 md:px-0 md:grid md:grid-cols-3'>
             <div className='md:col-span-2 md:pr-5'>
                 <p className='my-4'><span className='font-bold text-lg'>Job Description: </span>{job_description}</p>
@@ -87,14 +98,18 @@ const JobDetails = () => {
                     </p>
                 </div>
                 <div>
-                <Link to='/appliedjobs' onClick={()=>applyNowClickHandler(id)}>
-                    <button className='bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-white px-3 py-2 rounded-md font-bold tracking-wider w-full mt-5'>
+                <Link onClick={()=>applyNowClickHandler(id)}>
+                    <button  className='bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-white px-3 py-2 rounded-md font-bold tracking-wider w-full mt-5'>
                         Apply Now
                     </button>
+                    
                 </Link>
+                
                 </div>
             </div>
         </div>
+        <ToastContainer />
+        </>
     );
 };
 
