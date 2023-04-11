@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, json, useLoaderData } from 'react-router-dom';
 import { AiOutlineDollarCircle } from "react-icons/ai";
 import { CiCalendarDate } from "react-icons/ci";
 import { BsTelephone } from "react-icons/bs";
@@ -12,7 +12,8 @@ const JobDetails = () => {
     let jobId = localStorage.getItem('jobId');
     
     let clickdeJob = allJobsArray.find(job => job.id == jobId)
-    console.log(clickdeJob);
+    // console.log(clickdeJob);
+    
 
     let {
         id,
@@ -31,8 +32,28 @@ const JobDetails = () => {
         experience
     } = clickdeJob;
 
-    return (
+    let appliedJobsIds = []
+
+    const applyNowClickHandler = (id) =>{
         
+
+         if(localStorage.getItem('appliedJobsIds')){
+            appliedJobsIds = JSON.parse(localStorage.getItem('appliedJobsIds'))
+            let isExist = appliedJobsIds.find(jobId => jobId === id)
+            console.log(isExist);
+            isExist ? console.log(`allready added`) : appliedJobsIds = [...appliedJobsIds, id];
+            localStorage.setItem('appliedJobsIds', JSON.stringify(appliedJobsIds))
+            return
+
+         }
+         appliedJobsIds = [...appliedJobsIds, id]
+         localStorage.setItem('appliedJobsIds', JSON.stringify(appliedJobsIds))
+
+
+    }
+
+    return (
+
         <div className='container mx-auto my-10 px-3 md:px-0 md:grid md:grid-cols-3'>
             <div className='md:col-span-2 md:pr-5'>
                 <p className='my-4'><span className='font-bold text-lg'>Job Description: </span>{job_description}</p>
@@ -66,7 +87,11 @@ const JobDetails = () => {
                     </p>
                 </div>
                 <div>
-                    <button className='bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-white px-3 py-2 rounded-md font-bold tracking-wider w-full mt-5'>Apply Now</button>
+                <Link to='/appliedjobs' onClick={()=>applyNowClickHandler(id)}>
+                    <button className='bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-white px-3 py-2 rounded-md font-bold tracking-wider w-full mt-5'>
+                        Apply Now
+                    </button>
+                </Link>
                 </div>
             </div>
         </div>
