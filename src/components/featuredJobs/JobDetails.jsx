@@ -45,23 +45,21 @@ const JobDetails = () => {
             appliedJobsIds = JSON.parse(localStorage.getItem('appliedJobsIds'))
             let isExist = appliedJobsIds.find(jobId => jobId === id)
             console.log(isExist);
-            isExist ? warnify() : appliedJobsIds = [...appliedJobsIds, id];
+            isExist ? toast.error("STOP! Already applied") : appliedJobsIds = [...appliedJobsIds, id];
             localStorage.setItem('appliedJobsIds', JSON.stringify(appliedJobsIds));
             if(!isExist){
-                notify()
+                toast.success("WOW! Application done")
             }
             return
 
          }
-         notify()
+         toast.success("WOW! Application done")
          appliedJobsIds = [...appliedJobsIds, id]
          localStorage.setItem('appliedJobsIds', JSON.stringify(appliedJobsIds))
 
 
     }
 
-    const notify = () => toast("Wow! Application done");
-    const warnify = () => toast("Stop! Already applied");
 
     return (
         <>
