@@ -8,7 +8,7 @@ import Home from './components/Home';
 import Banner from './components/Banner';
 import Statistics from './components/Statistics';
 import AppliedJobs from './components/appliedJobs/AppliedJobs';
-import Blog from './components/Blog';
+import Blog from './components/blog/Blog';
 import Error from './components/Error';
 import HomePage from './components/homePage/HomePage';
 import JobDetails from './components/featuredJobs/JobDetails';
