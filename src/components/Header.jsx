@@ -25,7 +25,7 @@ const Header = () => {
     }
 
     return (
-        <div className='container mx-auto text-center md:flex md:justify-between border py-8 items-center'>
+        <div className='container mx-auto text-center md:flex md:justify-between bg-white border-b sticky top-0 py-8 items-center'>
             <div>
                 <h1 className='text-4xl font-bold' style={siteLogoStyle}>Dream<span>Jobs</span></h1>
             </div>

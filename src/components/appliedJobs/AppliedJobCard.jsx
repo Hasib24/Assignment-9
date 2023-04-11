@@ -16,22 +16,18 @@ const AppliedJobCard = ({job}) => {
         <div className='border md:grid md:grid-cols-4 py-5 my-5'>
             <div className='flex items-center p-3'><img src={company_logo} alt="Company logo" /></div>
             <div className='col-span-2'>
-                <h1>{job_title}</h1>
+                <h1 className='font-bold text-2xl text-slate-800'>{job_title}</h1>
                 <h1>{company_name}</h1>
                 <p>
-                    <span className='inline-block border rounded-md p-2 mr-2'>{location_type}</span>
-                    <span className='inline-block border rounded-md p-2 mr-2'>{employment_type}</span>
-                
+                    <span className='inline-block border rounded-md p-2 mr-2 '>{location_type}</span>
+                    <span className='inline-block border rounded-md p-2 mr-2 '>{employment_type}</span>
                 </p>
                 <p>
                     <span  className='mr-5'><IoLocationOutline className='inline-block text-xl'></IoLocationOutline>{location}</span>
                     <span  className='mr-5'><AiOutlineDollarCircle className='inline-block text-xl'></AiOutlineDollarCircle>{salary}</span>
-                
-            
-                </p>
-                
+                </p> 
             </div>
-            <div className='flex items-center'>
+            <div className='flex items-center justify-end pr-3'>
                 <Link onClick={()=>viewDetailsbtnHandler(id)} to='/jobdetaiis'>
                 
                     <BtnNormal btnText={"View detailes"}></BtnNormal>

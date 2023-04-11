@@ -17,12 +17,12 @@ const Banner = () => {
             <div>
                 <img src={BannerPic} alt="Banner photo" />
             </div>
-            <div className='border md:w-1/2 flex flex-col justify-center'>
-                <h1 className='text-5xl font-bold tracking-wider'>Every small step <br /> count toward your <br /> <span style={siteLogoStyle}>Deram Job!</span></h1>
+            <div className=' md:w-1/2 flex flex-col justify-center'>
+                <h1 className='text-5xl font-bold tracking-wider text-slate-800'>Every Small Step <br /> Count Toward Your <br /> <span style={siteLogoStyle}>Deram Job!</span></h1>
                 <p className='text-slate-600 my-5'>
                     Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.
                 </p>
-                <p className='w-36 border'>
+                <p className='w-36'>
 
                     <BtnBig btnText={'Get Started'}></BtnBig>
                 </p>

@@ -43,7 +43,7 @@ const FeaturedJobs = () => {
         <div className='md:grid md:grid-cols-2'>
           {allJobs.map(job => <JobCard job={job} key={job.id}></JobCard>)}
         </div>
-        <div className='text-center' onClick={()=>{seeAllJobsHandler()}}>
+        <div className='text-center my-5' onClick={()=>{seeAllJobsHandler()}}>
           {allJobs.length < 6 ? <BtnBig btnText={'See All Jobs'}></BtnBig> : '' }
         </div>
         

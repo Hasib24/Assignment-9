@@ -34,7 +34,6 @@ const JobCard = ({job}) => {
 
                 <Link to='jobdetaiis' onClick={()=>viewDetailsbtnHandler(id)}>
                     <BtnNormal btnText={'View Details'} ></BtnNormal>
-                
                 </Link>
 
             
