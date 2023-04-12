@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link, json, useLoaderData } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Await, Link, json, useLoaderData, useLocation } from 'react-router-dom';
 import { AiOutlineDollarCircle } from "react-icons/ai";
-import { CiCalendarDate } from "react-icons/ci";
+import { CiCalendarDate, CiLogin } from "react-icons/ci";
 import { BsTelephone } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { IoLocationOutline } from "react-icons/io5"
@@ -11,12 +11,44 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
+
+
+
+
+
+
 const JobDetails = () => {
-    let allJobsArray = useLoaderData();
-    let jobId = localStorage.getItem('jobId');
+
+      
+  let [allJobsArray, setAllJobsArray] =useState([])
+
+ useEffect(()=>{
+   fetch('/featuredjobs.json')
+   .then(res => res.json())
+   .then(data => setAllJobsArray(data))
+ }, [])
+
+
+
+   
+   
+
+
     
-    let clickdeJob = allJobsArray.find(job => job.id == jobId)
-    // console.log(clickdeJob);
+    let siteLocation = useLocation();
+
+    let jobId = siteLocation.pathname.split('/')[2];
+   
+
+    let clickdeJob = [];
+    
+    if(allJobsArray.length > 0 ){
+         clickdeJob =  allJobsArray.find(job => job.id == jobId)
+    }
+
+    
+    // let clickdeJob =  allJobsArray.find(job => job.id == jobId)
+   
     
 
     let {
@@ -36,6 +68,10 @@ const JobDetails = () => {
         experience
     } = clickdeJob;
 
+    
+
+
+
     let appliedJobsIds = []
 
     const applyNowClickHandler = (id) =>{
@@ -43,13 +79,13 @@ const JobDetails = () => {
 
          if(localStorage.getItem('appliedJobsIds')){
             appliedJobsIds = JSON.parse(localStorage.getItem('appliedJobsIds'))
-            let isExist = appliedJobsIds.find(jobId => jobId === id)
+            let isExist = appliedJobsIds.find(aplyjId => aplyjId === id)
             
             isExist ? toast.error("STOP! Already applied") : appliedJobsIds = [...appliedJobsIds, id];
             localStorage.setItem('appliedJobsIds', JSON.stringify(appliedJobsIds));
-            if(!isExist){
-                toast.success("WOW! Application done")
-            }
+
+            isExist || toast.success("WOW! Application done");
+            
             return
 
          }
@@ -57,9 +93,13 @@ const JobDetails = () => {
          appliedJobsIds = [...appliedJobsIds, id]
          localStorage.setItem('appliedJobsIds', JSON.stringify(appliedJobsIds))
 
+        
+
 
     }
-
+    // toast.success("WOW! Application done")
+    // toast.success("WOW! Application done")
+    // toast.error("STOP! Already applied")
 
     return (
         <>
@@ -96,12 +136,12 @@ const JobDetails = () => {
                     </div>
                 </div>
                 <div>
-                <Link onClick={()=>applyNowClickHandler(id)}>
-                    <button  className='bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-white px-3 py-2 rounded-md font-bold tracking-wider w-full mt-5'>
-                        Apply Now
-                    </button>
+               
+                <button onClick={()=>applyNowClickHandler(id)}  className='bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-white px-3 py-2 rounded-md font-bold tracking-wider w-full mt-5'>
+                    Apply Now
+                </button>
                     
-                </Link>
+                
                 
                 </div>
             </div>

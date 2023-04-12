@@ -32,7 +32,7 @@ const JobCard = ({job}) => {
             </div>
             
 
-                <Link to='jobdetaiis' onClick={()=>viewDetailsbtnHandler(id)}>
+                <Link to={`jobdetaiis/${id}`}>
                     <BtnNormal btnText={'View Details'} ></BtnNormal>
                 </Link>
 

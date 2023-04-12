@@ -6,20 +6,22 @@ import BtnBig from './../buttons/BtnBig';
 import { useLoaderData } from 'react-router-dom';
 
 const FeaturedJobs = () => {
-
-  let jobs = useLoaderData();
   
+  let [jobs, setJobs] =useState([])
 
+  useEffect(()=>{
+    fetch('featuredjobs.json')
+    .then(res => res.json())
+    .then(data => setJobs(data))
+  }, [])
+
+  
   let [ allJobs, setAllJobs ] = useState([]);
 
   useEffect(()=>{
     setAllJobs(jobs.slice(0, 4))
   }, [jobs])
   
- 
-
-
-
 
   const seeAllJobsHandler = () =>{
 
@@ -48,7 +50,7 @@ const FeaturedJobs = () => {
         </div>
         
         
-        
+   
         
       </div>
   );
