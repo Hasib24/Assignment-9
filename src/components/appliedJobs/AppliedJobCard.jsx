@@ -13,7 +13,7 @@ const AppliedJobCard = ({job}) => {
     }
 
     return (
-        <div className='border md:grid md:grid-cols-4 py-5 my-5'>
+        <div className='border md:grid md:grid-cols-4 py-5 px-2 mx-4 my-5'>
             <div className='flex items-center p-3'><img src={company_logo} alt="Company logo" /></div>
             <div className='col-span-2'>
                 <h1 className='font-bold text-2xl text-slate-800'>{job_title}</h1>
