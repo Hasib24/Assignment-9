@@ -28,7 +28,7 @@ const AppliedJobCard = ({job}) => {
                 </p> 
             </div>
             <div className='flex items-center justify-end pr-3'>
-                <Link onClick={()=>viewDetailsbtnHandler(id)} to='/jobdetaiis'>
+                <Link to={`/jobdetaiis/${id}`}>
                 
                     <BtnNormal btnText={"View detailes"}></BtnNormal>
                 </Link>

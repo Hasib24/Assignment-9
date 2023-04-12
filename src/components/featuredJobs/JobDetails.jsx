@@ -11,15 +11,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-
-
-
-
-
-
 const JobDetails = () => {
-
-      
   let [allJobsArray, setAllJobsArray] =useState([])
 
  useEffect(()=>{
@@ -28,28 +20,14 @@ const JobDetails = () => {
    .then(data => setAllJobsArray(data))
  }, [])
 
-
-
-   
-   
-
-
     
     let siteLocation = useLocation();
-
     let jobId = siteLocation.pathname.split('/')[2];
    
-
     let clickdeJob = [];
-    
     if(allJobsArray.length > 0 ){
          clickdeJob =  allJobsArray.find(job => job.id == jobId)
     }
-
-    
-    // let clickdeJob =  allJobsArray.find(job => job.id == jobId)
-   
-    
 
     let {
         id,
@@ -68,9 +46,6 @@ const JobDetails = () => {
         experience
     } = clickdeJob;
 
-    
-
-
 
     let appliedJobsIds = []
 
@@ -87,19 +62,13 @@ const JobDetails = () => {
             isExist || toast.success("WOW! Application done");
             
             return
-
          }
          toast.success("WOW! Application done")
          appliedJobsIds = [...appliedJobsIds, id]
          localStorage.setItem('appliedJobsIds', JSON.stringify(appliedJobsIds))
 
-        
-
-
     }
-    // toast.success("WOW! Application done")
-    // toast.success("WOW! Application done")
-    // toast.error("STOP! Already applied")
+ 
 
     return (
         <>

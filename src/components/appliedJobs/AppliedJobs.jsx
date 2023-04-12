@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import AppliedJobCard from './AppliedJobCard';
+import BtnNormal from '../buttons/BtnNormal';
 
 const AppliedJobs = () => {
 
@@ -37,11 +38,12 @@ const AppliedJobs = () => {
                 </select>
             </div>
             <div>
+                
                 {(applideJosArray.length > 0) || <p className='h-[400px] border justify-center items-center text-5xl text-red-600 font-bold flex'>Not yet applied</p>}
                 {applideJosArray.length && applideJosArray.map(job => <AppliedJobCard job={job} key={job.id}></AppliedJobCard>)}
-
+        
             </div>
-            {/* {applideJosIds.length || `Not yet applied`} */}
+            
         </div>
     );
 };
